@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Todo } from "@/types"
 import { IoMdAddCircle } from "react-icons/io"
 import { MdEdit } from "react-icons/md"
+import { CiSaveDown1 } from "react-icons/ci";
 
 interface TodoFormProps {
   editTodo: Todo | null
@@ -54,7 +55,7 @@ const Form: React.FC<TodoFormProps> = ({ editTodo, onSubmit }) => {
             <span>Completed</span>
           </label>
           <Button type="submit" className="size-[sm] bg-[#007FFF] hover:bg-[#007FFF] cursor-pointer">
-            {editTodo ? "Save Changes" : "Add Task"}
+            {editTodo ? <>Add Todo <CiSaveDown1 /></> : <>Add Todo <IoMdAddCircle /></>}
           </Button>
         </form>
       </CardContent>

@@ -31,7 +31,7 @@ const Tasks: React.FC<TasksProps> = ({ todos, handleEdit, handleDelete }) => {
               <TableCell>
                 <div className="flex gap-2">
                   <Button  onClick={() => handleEdit(todo)} className="text-[#007FFF] bg-white hover:bg-white cursor-pointer">
-					Edit <MdEdit /> 
+					          Edit <MdEdit /> 
                   </Button>
                   <Button onClick={() => handleDelete(todo.id)} className="text-[#FF3F3F] bg-white hover:bg-white cursor-pointer">
                     Delete <TiDelete />
